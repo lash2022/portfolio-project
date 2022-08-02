@@ -20,7 +20,7 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "experience",
+      link: "Technologies",
     },
     {
       id: 5,
@@ -34,11 +34,11 @@ const NavBar = () => {
         <h1 className="text-5xl font-signature ml-2">Lasha Giorgadze</h1>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex  ">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium focus: text-gray-500 hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={1800}>
               {link}
@@ -53,26 +53,26 @@ const NavBar = () => {
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+          
+      <ul className={`flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen
+         bg-gradient-to-b from-black to-gray-800 text-gray-500 ${nav? 'translate-x-0' :
+         'translate-x-full'} ease-in-out duration-1000` }>
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200 "
             >
               <Link
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
-                duration={500}
+                duration={1800}
               >
                 {link}
               </Link>
             </li>
           ))}
         </ul>
-      )}
     </div>
   );
 };
