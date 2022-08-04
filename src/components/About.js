@@ -2,30 +2,23 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div name = 'about' className=' w-full h-screen bg-gradient-to-b 
-    from-gray-800 to-black text-white'>
+    <div name = 'about' className=' w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
         <div className=' max-w-screen-lg p-4 mx-auto flex flex-col
          justify-center w-full h-full'>
             <div className=' pb-8' >
                 <p className=' text-4xl font-bold inline border-b-4
                  border-gray-500'>About</p>
             </div>
-            <p className=' text-xl mt-20'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-            deserunt illum mollitia officiis qui exercitationem perferendis neque
-            quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-            iste, totam fugiat recusandae rerum laborum perferendis molestiae
-            aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-            ab mollitia voluptatibus, a nostrum eveniet laborum!
+            <p className=' text-2xl mt-20'>
+                Who Am I ?
             </p>
             <br />
             <p className='text-xl'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            pariatur, vel similique sint, nobis aspernatur ut praesentium
-            explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-            quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-            Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-            magni quo! Eum cupiditate debitis labore.
+            My name is Lasha Giorgadze. I am 22 years old, I live in Tbilisi, Georgia, and I'm a self-taught Web developer. I was studying at 
+            university for three and a half years about agriculture, but I realised that it no longer gave me ap pleasure to continue.
+            Past year I shifted my focus to frontend development, which I have developed a great passion for. I enjoy the constant change in the technologies 
+            used in the area and love diving into new frameworks and technologies. Spending time customizing, improving and tinkering with my work environment 
+            and tools is something I enjoy a lot, as it is something I use for many hours daily. It allows me to have it exactly as I desire. 
             </p>
         </div>
     </div>
