@@ -8,6 +8,7 @@ import redux from "../assets/redux.png";
 import git from "../assets/git.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import sass from "../assets/sass.png";
 
 
 const Technologies = () => {
@@ -44,28 +45,29 @@ const Technologies = () => {
     },
     {
       id: 6,
+      src: sass,
+      title: "Sass",
+      style: "shadow-pink-500",
+    },
+    {
+      id: 7,
       src: redux,
       title: "Redux",
       style: "shadow-fuchsia-800",
     },
     {
-      id: 7,
+      id: 8,
       src: git,
       title: "Git",
       style: "shadow-orange-900",
     },
     {
-      id: 8,
+      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
-    // {
-    //   id: 9,
-    //   src: sass,
-    //   title: "Sass",
-    //   style: "shadow-pink-500",
-    // },
+    
   ];
 
   return (
