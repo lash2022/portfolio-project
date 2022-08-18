@@ -24,11 +24,12 @@ const Portfolio = () => {
         }
         ,
         {
-          id: 3,
-          src: chesssignup,
-          demoLink: 'https://subtle-seahorse-8a0242.netlify.app',
-          gitLink: 'https://github.com/lash2022/redb-assignment',
-          stacks: 'React, Axios'
+          id: 6,
+          src: reactWeather,
+          demoLink: 'https://singular-bublanina-8a118b.netlify.app',
+          gitLink: 'https://github.com/lash2022/weather-forecast',
+          stacks: 'React'
+          
         },
         {
           id: 4,
@@ -40,21 +41,22 @@ const Portfolio = () => {
         {
           id: 5,
           src: calculator,
-          demoLink: 'https://fantastic-bublanina-487832.netlify.app',
+          demoLink: 'https://statuesque-hotteok-10ab67.netlify.app/',
           gitLink: 'https://github.com/lash2022/Calculator',
           stacks: 'HTML, CSS, JS'
         }
         ,
         {
-          id: 6,
-          src: reactWeather,
-          demoLink: 'https://singular-bublanina-8a118b.netlify.app',
-          gitLink: 'https://github.com/lash2022/weather-forecast',
-          stacks: 'React'
+          id: 3,
+          src: chesssignup,
+          demoLink: 'https://subtle-seahorse-8a0242.netlify.app',
+          gitLink: 'https://github.com/lash2022/redb-assignment',
+          stacks: 'React, Axios'
+          
         },
       ];
   return (
-    <div name = "portfolio" className=' bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
+    <div name = "portfolio" className=' bg-gradient-to-b from-black to-gray-800 w-full h-full text-white md:h-screen'>
         <div className=' max-w-screen-lg p-4 mx-auto flex flex-col
          justify-center w-full h-full'>
             <div className=' pb-8'>
@@ -67,10 +69,11 @@ const Portfolio = () => {
                     {portfolios.map(({id,src,demoLink,gitLink,stacks}) => (
                         
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg cursor-pointer'>
-                          <div className=' relative'>
+                          <div className=' relative group'>
                             <img src={src} alt=""  className='  rounded-md
                                 duration-200 hover:scale-105'/>
-                                <p className=' absolute top-36 left-3 font-bold text-xl '>{stacks}</p>
+                                 <p className='absolute invisible group-hover:visible font-bold text-xl
+                                 transition-all duration-200 delay-200 bottom-3 '>{stacks}</p>
                           </div>
                                 <div className='flex items-center justify-center'>
                                 <button className=' w-1/2 px-6 m-4 duration-200
