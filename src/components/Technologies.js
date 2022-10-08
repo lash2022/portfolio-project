@@ -9,6 +9,9 @@ import git from "../assets/git.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import sass from "../assets/sass.png";
+import bootstrap from "../assets/bootstrap.png";
+import Wordpress from "../assets/WordPress.png";
+import typescript from "../assets/typescript.png";
 
 
 const Technologies = () => {
@@ -37,11 +40,25 @@ const Technologies = () => {
       title: "React",
       style: "shadow-blue-600",
     },
+    
+    {
+      id: 11,
+      src: typescript,
+      title: "Typescript",
+      style: "shadow-blue-900",
+    },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
+    },
+    
+    {
+      id: 12,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-fuchsia-900",
     },
     {
       id: 6,
@@ -53,7 +70,13 @@ const Technologies = () => {
       id: 7,
       src: redux,
       title: "Redux",
-      style: "shadow-fuchsia-800",
+      style: "shadow-fuchsia-400",
+    },
+    {
+      id: 10,
+      src: Wordpress,
+      title: "Wordpress",
+      style: "shadow-gray-400",
     },
     {
       id: 8,
@@ -61,12 +84,15 @@ const Technologies = () => {
       title: "Git",
       style: "shadow-orange-900",
     },
+
     {
       id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    
+    
     
   ];
 
